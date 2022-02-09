@@ -10,7 +10,7 @@ function Dashboard() {
 
   useEffect(() => {
     if (!isAuthenticated) router.replace('/')
-  }, [isAuthenticated])
+  }, [isAuthenticated, router])
 
   const sendEth = async () => {
     try {
